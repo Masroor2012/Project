@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Secondary section</title>
+            <link rel="stylesheet" href="css/sec.css">
+        </head>
+        <body>
+            <div class="anime" id="none">
+                Please make sure all the information </br>
+                the you are going to input in the boxes are </br>
+                accurate because they are not editable!<br>
+                <button class="bn" onclick="document.getElementById('none').style.display='none'">OK</button>
+            </div>
+            <section class="container overflow">
+                <h1 style="color: #083009; text-align:center; font-size: 30px;">Secondary students report card generator</h1>
+                <div id="in">
+                <input type="text" placeholder="Enter students name" class="inu1">
+                <input type="text" placeholder="Enter students class" class="inu2">
+                <input type="text" placeholder="1st term 2nd term or 3rd term?" class="inu3">
+                <button id="br" onclick="func()">Submit</button>
+            </div>
+            <div id="resu">
+                
+            </div>
+                <div class="row"> 
+               <input type="number" placeholder="Mathematics Score [0 - 100]" id="val1"> 
+               <input type="number" placeholder="English Score [0 - 100]" id="val2"> 
+                </div>
+                <div class="row">
+                    <input type="number" placeholder="Yoruba Score [0 - 100]" id="val3"> 
+                    <input type="number" placeholder="CCA Score [0 - 100]" id="val4"> 
+                </div>
+                <div class="row">
+                    <input type="number" placeholder="Basic Technology Score [0 - 100]" id="val5"> 
+                     <input type="number" placeholder="Basic science Score [0 - 100]" id="val6">
+                 </div> 
+                 <div class="row"> 
+                     <input type="number" placeholder="Business studies Score [0 - 100]" id="val7"> 
+                     <input type="number" placeholder="Civic Education Score [0 - 100]" id="val8">
+                  </div>
+                   <div class="row">
+                     <input type="number" placeholder="IRS Score [0 - 100]" id="val9">
+                     <input type="number" placeholder="Agric science Score [0 - 100]" id="val10"> 
+                  </div>
+                  <div class="row"> 
+                     <input type="number" placeholder="History Score [0 - 100]" id="val11">
+                     <input type="number" placeholder="Social studies Score [0 - 100]" id="val12">    
+                </div>
+                    <div class="row">
+                        <input type="number" placeholder="Home Economics Score [0 - 100]" id="val13">  
+                        <input type="number" placeholder="PHE Score [0 - 100]" id="val14">  
+                    </div>
+                    <div class="row">
+                         <input type="number" placeholder="Arabic Score [0 - 100]" id="val15">  
+                         <input type="number" placeholder="Hifsu Score [0 - 100]" id="val16">  
+                    </div>
+                    <div class="row">
+                        <input type="number" placeholder="Computer Score [0 - 100]" id="val17">  
+                        <input type="number" placeholder="Security Education Score [0 - 100]" id="val18">  
+                    </div>
+                <input type="button" value="Generate Report" onclick="generate()">
+                <table id="reportTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Subject</th>
+                            <th>Score</th>
+                            <th>Grade</th>
+                            <th>Remark</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- rows will show up dynamically -->
+                    </tbody>
+                </table>
+                <div id="info"></div>
+                    <div class="down-part">
+                        <input type="text" class="result" placeholder="Total score:" disabled>
+                        <a href="sec.html">
+                            <button id="clear">
+                                Clear
+                            </button>
+                        </a>
+                    </div>
+            </section>
+            
+        </body>
+        
+        
+    <script src="grade.js"></script>
+</html>

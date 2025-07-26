@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Animated Icon</title>
+  <style>
+    body {
+      background: #0d1117;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .icon {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #1f2937, #111827);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    .icon::before {
+      content: "</>";
+      font-size: 3rem;
+      font-family: monospace;
+      color: #00ffff;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="icon"></div>
+</body>
+</html>
